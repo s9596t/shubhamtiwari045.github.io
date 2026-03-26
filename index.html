@@ -212,33 +212,6 @@
             width: 5px; height: 5px; background: var(--text-dim); border-radius: 50%;
         }
 
-        /* PROJECTS */
-        #projects { background: var(--bg-card); }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .project-card {
-            background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
-            overflow: hidden; transition: border-color 0.3s, transform 0.2s;
-        }
-        .project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-        .project-banner {
-            height: 160px; display: flex; align-items: center; justify-content: center;
-            font-size: 3rem; position: relative; overflow: hidden;
-        }
-        .project-banner::after {
-            content: ''; position: absolute; inset: 0;
-            background: linear-gradient(to bottom, transparent 50%, var(--bg));
-        }
-        .project-body { padding: 20px 24px 24px; }
-        .project-body h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
-        .project-body p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6; }
-        .project-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
-        .project-tech span {
-            font-size: 0.75rem; padding: 3px 10px; border-radius: 6px;
-            background: rgba(99, 102, 241, 0.08); color: var(--accent-light);
-            border: 1px solid rgba(99, 102, 241, 0.15);
-        }
-        .project-links { display: flex; gap: 12px; }
-        .project-links a { font-size: 0.85rem; font-weight: 500; }
 
         /* EDUCATION */
         .edu-card {
@@ -309,7 +282,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -492,58 +465,6 @@
         </div>
     </section>
 
-    <section id="projects">
-        <div class="section-inner">
-            <span class="section-label">// Projects</span>
-            <h2 class="section-title fade-in">Things I've built.</h2>
-            <p class="section-desc fade-in">Personal projects that solve real problems and showcase my skills beyond testing.</p>
-            <div class="projects-grid fade-in">
-                <div class="project-card">
-                    <div class="project-banner" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">&#129302;</div>
-                    <div class="project-body">
-                        <h3>AI Resume Workflow</h3>
-                        <p>Full-stack app that takes your resume + job description, sends it through
-                        Claude AI for optimization, and generates ATS-friendly .docx, PDF, and LaTeX outputs automatically.</p>
-                        <div class="project-tech">
-                            <span>Python</span><span>Flask</span><span>Claude AI</span>
-                            <span>python-docx</span><span>LaTeX</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/s9596t" target="_blank">View on GitHub &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background: linear-gradient(135deg, #0f172a, #1e293b, #334155);">&#128187;</div>
-                    <div class="project-body">
-                        <h3>Portfolio Website</h3>
-                        <p>This website! A modern, responsive portfolio built with pure HTML, CSS, and JavaScript.
-                        Deployed on GitHub Pages with smooth animations and dark theme.</p>
-                        <div class="project-tech">
-                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/s9596t" target="_blank">View Source &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background: linear-gradient(135deg, #14532d, #166534, #15803d);">&#128640;</div>
-                    <div class="project-body">
-                        <h3>Selenium Test Framework</h3>
-                        <p>A reusable, data-driven Selenium automation framework built with Java,
-                        TestNG, and Page Object Model for scalable web application testing.</p>
-                        <div class="project-tech">
-                            <span>Java</span><span>Selenium</span><span>TestNG</span><span>Maven</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/s9596t" target="_blank">View on GitHub &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="education">
         <div class="section-inner">
